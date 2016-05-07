@@ -1,0 +1,18 @@
+{
+   "mapping": {
+     "vector_push_back": "../example-instrumented/vector_push_back",
+     "/usr/include": "../example-instrumented/usr-include"
+   },
+   "watch": [
+     {
+       "regex": "std::vector.*",
+       "name": "std::vector",
+       "flags": 1
+     },
+     {
+       "regex": "std::set.*",
+       "name": "std::set",
+       "flags": 1
+     }
+   ]
+}
